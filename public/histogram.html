@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Histogram</title>
+    <link rel="stylesheet" href="histogram.css"/>
+</head>
+<body>
+<h1>Histogram Generator</h1>
+
+<main>
+    <div class="block left">
+        <h2>Lower bounds</h2>
+        <div class="row">
+            <div class="type">Max</div>
+            <div class="input"><input max="100" min="0" type="number" step="0.01" value="100.00"></div>
+        </div>
+        <div class="row">
+            <div class="type">A+</div>
+            <div class="input"><input max="100" min="0" type="number" step="0.01" value="95.00"></div>
+        </div>
+        <div class="row">
+            <div class="type">A</div>
+            <div class="input"><input max="100" min="0" type="number" step="0.01" value="90.00"></div>
+        </div>
+        <div class="row">
+            <div class="type">A-</div>
+            <div class="input"><input max="100" min="0" type="number" step="0.01" value="85.00"></div>
+        </div>
+
+        <div class="row">
+            <div class="type">B+</div>
+            <div class="input"><input max="100" min="0" type="number" step="0.01" value="80.00"></div>
+        </div>
+        <div class="row">
+            <div class="type">B</div>
+            <div class="input"><input max="100" min="0" type="number" step="0.01" value="75.00"></div>
+        </div>
+        <div class="row">
+            <div class="type">B-</div>
+            <div class="input"><input max="100" min="0" type="number" step="0.01" value="70.00"></div>
+        </div>
+
+        <div class="row">
+            <div class="type">C+</div>
+            <div class="input"><input max="100" min="0" type="number" step="0.01" value="65.00"></div>
+        </div>
+        <div class="row">
+            <div class="type">C</div>
+            <div class="input"><input max="100" min="0" type="number" step="0.01" value="60.00"></div>
+        </div>
+        <div class="row">
+            <div class="type">C-</div>
+            <div class="input"><input max="100" min="0" type="number" step="0.01" value="55.00"></div>
+        </div>
+
+        <div class="row">
+            <div class="type">D</div>
+            <div class="input"><input max="100" min="0" type="number" step="0.01" value="50.00"></div>
+        </div>
+        <div class="row">
+            <div class="type">F</div>
+            <div class="input"><input max="100" min="0" type="number" step="0.01" value="0.00"></div>
+        </div>
+
+    </div>
+    <div class="block top">
+        <h2>Histogram</h2>
+        <div class="row">
+            <div class="type">A+</div>
+            <div class="num"></div>
+        </div>
+        <div class="row">
+            <div class="type">A</div>
+            <div class="num"></div>
+        </div>
+        <div class="row">
+            <div class="type">A-</div>
+            <div class="num"></div>
+        </div>
+
+        <div class="row">
+            <div class="type">B+</div>
+            <div class="num"></div>
+        </div>
+        <div class="row">
+            <div class="type">B</div>
+            <div class="num"></div>
+        </div>
+        <div class="row">
+            <div class="type">B-</div>
+            <div class="num"></div>
+        </div>
+
+        <div class="row">
+            <div class="type">C+</div>
+            <div class="num"></div>
+        </div>
+        <div class="row">
+            <div class="type">C</div>
+            <div class="num"></div>
+        </div>
+        <div class="row">
+            <div class="type">C-</div>
+            <div class="num"></div>
+        </div>
+
+        <div class="row">
+            <div class="type">D</div>
+            <div class="num"></div>
+        </div>
+        <div class="row">
+            <div class="type">F</div>
+            <div class="num"></div>
+        </div>
+    </div>
+    <div class="block bottom">
+        New Grade: <input max="100" min="0" type="number" step="0.01" id="new">
+    </div>
+</main>
+
+<script src="calculate.js"></script>
+</body>
+</html>

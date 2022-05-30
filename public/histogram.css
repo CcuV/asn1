@@ -1,0 +1,73 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "left top"
+"left top"
+"left bottom";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 900px;
+    grid-gap: 20px;
+    font-family: "Times New Roman", sans-serif;
+}
+
+.left {
+    grid-area: left;
+}
+
+.top {
+    grid-area: top;
+}
+
+.bottom {
+    grid-area: bottom;
+}
+
+.block {
+    background: #eee;
+    padding: 20px;
+}
+
+h2 {
+    color: darkred;
+    margin-top: 0;
+}
+
+.row {
+    display: flex;
+    padding: 10px 40px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.row .type {
+    width: 100px;
+}
+
+.row .input {
+    flex: 1;
+}
+
+.row input, .bottom input {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: none;
+    width: 100px;
+    text-align: right;
+    padding: 0 10px;
+}
+
+.top .row {
+    padding: 10px 40px;
+}
+
+.num {
+    background: darkred;
+    height: 20px;
+    transition: all .3s ease;
+}
